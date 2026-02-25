@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Population & Geopolitical Risk Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-slate-900 text-white p-12 text-center">
+        <h1 class="text-4xl font-bold">Global Population & Geopolitical Risk Dashboard</h1>
+        <p class="mt-4 text-xl italic text-blue-300">「數據洞察未來：人口增長如何重塑地緣政治格局」</p>
+        <p class="mt-6 text-gray-400">作者姓名：吳昱萱</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6">
+        <section class="my-10 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-bold mb-6 border-l-4 border-blue-500 pl-4">世界人口預測 (UN World Population Prospects)</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <p class="text-gray-600">2024</p>
+                    <p class="text-3xl font-bold text-blue-700">8.16B</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <p class="text-gray-600">2030</p>
+                    <p class="text-3xl font-bold text-blue-700">8.55B</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <p class="text-gray-600">2050</p>
+                    <p class="text-3xl font-bold text-blue-700">9.74B</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <p class="text-gray-600">2100</p>
+                    <p class="text-3xl font-bold text-blue-700">10.35B</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-10 bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-bold mb-6 border-l-4 border-red-500 pl-4">伊朗地緣政治風險矩陣 (Iran Risk Matrix)</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="p-4 border">風險因子</th>
+                            <th class="p-4 border">機率</th>
+                            <th class="p-4 border">影響程度</th>
+                            <th class="p-4 border">事實資料 (Fact)</th>
+                            <th class="p-4 border">推論 (Inference)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-4 border font-semibold">核協議僵局</td>
+                            <td class="p-4 border text-red-600">高</td>
+                            <td class="p-4 border text-red-600">極高</td>
+                            <td class="p-4 border">IAEA報告濃縮鈾儲備增加</td>
+                            <td class="p-4 border">可能引發區域軍備競賽</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 border font-semibold">海峽封鎖風險</td>
+                            <td class="p-4 border text-yellow-600">中</td>
+                            <td class="p-4 border text-red-600">極高</td>
+                            <td class="p-4 border">20%全球石油經由霍爾木茲海峽</td>
+                            <td class="p-4 border">將導致全球能源通膨</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="my-10 bg-gray-100 p-8 rounded-xl">
+            <h2 class="text-2xl font-bold mb-4">方法論 (Methodology)</h2>
+            <ul class="list-disc ml-6 space-y-2">
+                <li><strong>AI 使用：</strong>利用 Python 計算 CAGR 並產出 JSON 資料。</li>
+                <li><strong>資料驗證：</strong>引用自 UN World Population Prospects，排除 AI 數字幻覺 [cite: 59, 60]。</li>
+                <li><strong>技術實作：</strong>採用 Tailwind CSS 確保 RWD 響應式佈局 [cite: 13, 29]。</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="p-10 text-center text-gray-500 text-sm">
+        Data Source: Our World in Data / UN Population Division [cite: 61]
+    </footer>
+</body>
+</html>
