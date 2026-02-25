@@ -1,0 +1,29 @@
+{
+    "metadata": {
+        "source": "UN World Population Prospects",
+        "unit": "Billions"
+    },
+    "data": [
+        {
+            "year": 2024,
+            "population": 8.16
+        },
+        {
+            "year": 2030,
+            "population": 8.55
+        },
+        {
+            "year": 2050,
+            "population": 9.74
+        },
+        {
+            "year": 2100,
+            "population": 10.35
+        }
+    ],
+    "analysis": {
+        "mean": 9.2,
+        "total_growth_rate": "26.84%",
+        "cagr": "0.3133%"
+    }
+}
